@@ -101,15 +101,15 @@ form {
 }
 
 .new::-moz-placeholder {
-  opacity: 0.3;
+  color: antiquewhite;
 }
 
 .new:-ms-input-placeholder {
-  opacity: 0.3;
+  color: antiquewhite;
 }
 
 .new::placeholder {
-  opacity: 0.3;
+  color: antiquewhite;
 }
 
 .new:focus {
