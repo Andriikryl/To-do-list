@@ -10,19 +10,31 @@ $size: .75em;
 
 body{
     margin: 0;
-    background-color: azure;
+    background-image: url(../images/the_escapist_by_martinstranka_dcodp2n-pre.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:luminosity;
+    background-color: #e73c7e;
     font-weight: 300;
-    font-size: 1.5rem;
-    display: grid;
-    grid:
-    "header header header header" auto 
-    "....... lists active ......." auto /
-    1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
-    grid-row: row;
+    // display: grid;
+    // grid:
+    // "header header header header" auto 
+    // "....... lists active ......." auto /
+    // 1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
+    color: antiquewhite;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20%;
+    align-items: center;
 }
 
 .title{
-    grid-area: header;
+    // grid-area: header;
     color: blue;
     text-align: center;
     font-weight: 900;
@@ -32,7 +44,7 @@ body{
 }
 
 .all-tasks{
-    grid-area:  lists;
+    // grid-area:  lists;
 }
 
 .task-list{
@@ -111,7 +123,7 @@ form{
 
 .todo-list{
     
-    grid-area: active;
+    // grid-area: active;
     background: white;
 }
 
