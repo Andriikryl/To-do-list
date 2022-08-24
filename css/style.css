@@ -20,9 +20,18 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 20%;
   align-items: center;
+}
+
+.all-tasks {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.1) 50%, rgba(64, 163, 248, 0.3) 50%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
+  padding: 20px;
 }
 
 .title {
@@ -125,12 +134,16 @@ form {
 }
 
 .todo-list {
-  background: white;
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.1) 50%, rgba(64, 163, 248, 0.3) 50%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
 }
 
 .todo-header {
   padding: 2rem;
-  background: #e4e4e4;
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.1) 50%, rgba(64, 163, 248, 0.3) 50%);
+  border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
   display: flex;
   align-items: center;
   justify-content: space-between;
