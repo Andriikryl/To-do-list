@@ -158,7 +158,7 @@ window.addEventListener('DOMContentLoaded', () => {
     separation: 100.00,
     alignment: 77.00,
     cohesion: 5.00,
-    quantity: 4.00
+    quantity: 3.00
   })
 
   setTimeout(() => {
