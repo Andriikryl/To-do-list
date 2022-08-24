@@ -3,18 +3,23 @@
 *::after {
   font-family: inherit;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-weight: 300;
+  color: antiquewhite;
+}
+
+.todo {
   background-image: url(../images/the_escapist_by_martinstranka_dcodp2n-pre.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
   background-color: #e73c7e;
-  font-weight: 300;
-  color: antiquewhite;
   background-position: center;
-  padding-bottom: 50px;
+  height: 100vh;
 }
 
 .container {
@@ -24,7 +29,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 20%;
+  padding-top: 10%;
   align-items: center;
 }
 
@@ -34,6 +39,7 @@ body {
           backdrop-filter: blur(5px);
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
   padding: 50px;
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 690px) {
   .all-tasks {
@@ -145,12 +151,14 @@ form {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
 }
 
 .todo-header {
   padding: 4rem;
   background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.1) 50%, rgba(64, 163, 248, 0.3) 50%);
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
+  filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
   display: flex;
   align-items: center;
   justify-content: space-between;
