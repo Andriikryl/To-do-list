@@ -6,7 +6,6 @@
 }
 
 body {
-  margin: 0;
   background-image: url(../images/the_escapist_by_martinstranka_dcodp2n-pre.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,6 +17,7 @@ body {
 
 .container {
   max-width: 1200px;
+  padding-inline: 15px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +31,12 @@ body {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
-  padding: 20px;
+  padding: 50px;
+}
+@media screen and (max-width: 610px) {
+  .all-tasks {
+    margin-bottom: 30px;
+  }
 }
 
 .title {
@@ -141,7 +146,7 @@ form {
 }
 
 .todo-header {
-  padding: 2rem;
+  padding: 4rem;
   background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.1) 50%, rgba(64, 163, 248, 0.3) 50%);
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
   display: flex;
@@ -159,12 +164,12 @@ form {
 }
 
 .todo-body {
-  padding: 2rem;
+  padding: 4rem;
   position: relative;
 }
 
 .new-task-creator .create {
-  color: firebrick;
+  color: antiquewhite;
 }
 
 [type=checkbox] {
@@ -209,7 +214,7 @@ form {
 .task:hover .custom-checkbox,
 [type=checkbox]:focus + label .custom-checkbox {
   transform: scale(1.2);
-  color: aqua;
+  color: rgba(64, 163, 248, 0.3);
 }
 
 [type=checkbox]:checked + label .custom-checkbox {
@@ -241,9 +246,19 @@ form {
   transform-origin: left;
 }
 
-.delete-styff {
+.delete__butoms {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  -webkit-padding-before: 15px;
+          padding-block-start: 15px;
+}
+
+.first {
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+}
+
+.delete-styff {
   position: absolute;
   width: 100%;
   left: 0;
