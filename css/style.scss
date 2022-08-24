@@ -22,12 +22,9 @@ body{
     background-blend-mode:luminosity;
     background-color: #e73c7e;
     font-weight: 300;
-    // display: grid;
-    // grid:
-    // "header header header header" auto 
-    // "....... lists active ......." auto /
-    // 1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
     color: antiquewhite;
+    background-position: center;
+    padding-bottom: 20px;
 }
 
 .container{
@@ -45,12 +42,11 @@ body{
     backdrop-filter: blur(5px);
     border-radius: clamp(0px, ((100vw - 4px) - 100%) * 9999, 20px);
     padding: 50px;
-    @include max-screen (610px){
+    @include max-screen (690px){
        margin-bottom: 30px;
     }
 }
 .title{
-    // grid-area: header;
     color: blue;
     text-align: center;
     font-weight: 900;

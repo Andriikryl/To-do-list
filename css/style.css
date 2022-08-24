@@ -13,6 +13,8 @@ body {
   background-color: #e73c7e;
   font-weight: 300;
   color: antiquewhite;
+  background-position: center;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -33,7 +35,7 @@ body {
   border-radius: clamp(0px, (100vw - 4px - 100%) * 9999, 20px);
   padding: 50px;
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 690px) {
   .all-tasks {
     margin-bottom: 30px;
   }
